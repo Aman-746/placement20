@@ -13,8 +13,9 @@ class Solution
     int NumberOfPath(int a, int b)
     {
         //code here
-        int dp[a][b];
-        memset(dp,0,sizeof dp);
+        // int dp[a][b];
+        vector<vector<int>>dp(a,vector<int>(b,0));
+        // memset(dp,0,sizeof dp);
         for(int i=0;i<a;i++) dp[i][0]=1;
         for(int j=1;j<b;j++) dp[0][j]=1;
         for(int i=1;i<a;i++){
