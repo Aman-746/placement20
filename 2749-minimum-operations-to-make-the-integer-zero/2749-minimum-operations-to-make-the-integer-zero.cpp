@@ -11,8 +11,7 @@ public:
     // we can also write it as 13*2^0 here k=13 means range of k can be [setbit,number]
     
     int makeTheIntegerZero(int num1, int num2) {
-        if(num1<=num2) return -1;
-        if(num1==num2) return 0;
+       
         for(int k=0;k<100;k++){
             long long diff=(long long)num1-(long long)k*num2;
             if(diff<0) return -1;
