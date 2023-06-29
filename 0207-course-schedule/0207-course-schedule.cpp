@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // kahn's algorithm or simply cycle detection in directed graph using topological sort
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         vector<int>adj[numCourses];
         for(auto it:prerequisites){
