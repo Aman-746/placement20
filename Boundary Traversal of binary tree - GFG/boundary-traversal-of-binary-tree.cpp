@@ -106,6 +106,13 @@ struct Node
 class Solution {
 public:
 
+// if root is leaf node then leaves function will add that into result, otherwise if it is not leaf node then
+// add it to result in the very starting
+
+// leftBoundary function will add left most nodes in result, if left is null then it will go to right
+// leaves function will add leaf nodes in result
+// rightBoundary function will add right most nodes in result, if right is null then it will go to left
+
     bool isLeaf(Node* root){
         if(!root->left && !root->right) return true;
         return false;
