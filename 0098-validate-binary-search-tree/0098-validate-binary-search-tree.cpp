@@ -11,6 +11,9 @@
  */
 class Solution {
 public:
+    // every node value should be in the range [mini,maxi]
+    // left value should be in the range [mini,root->val]
+    // right value should be in the range [root->val,maxi]
     bool check(TreeNode* root, long mini, long maxi){
         if(!root) return true;
         if(root->val<=mini || root->val>=maxi) return false;
