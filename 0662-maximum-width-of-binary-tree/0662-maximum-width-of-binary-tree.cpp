@@ -11,27 +11,24 @@
  */
 class Solution {
 public:
+    unsigned int ans=1; // since we know number of nodes are >=1 so ans can't be zero
+    unordered_map<int,unsigned int>m; // (level,index)
+    
+    void dfs(TreeNode* root, unsigned int index, int level){
+        if(!root) return;
+        
+        // if we have already gone through that level means we have stored the leftmost index of         // that level so we can easily access our leftmost index of that level by just doing             // m[level]
+        if(m.count(level)) ans=max(ans,index-m[level]+1);
+        
+        // else if we are 1st time going through that level then store it into map with                 // corresponding index and that index will be leftmost index for sure 
+        else m[level]=index;
+        
+        dfs(root->left,index*2,level+1);
+        dfs(root->right,index*2+1,level+1);
+    }
+    
     int widthOfBinaryTree(TreeNode* root) {
-        if(!root) return 0;
-        queue<pair<TreeNode*,int>>q;
-        int ans=0;
-        q.push({root,0});
-        while(!q.empty()){
-            int size=q.size();
-            // mini is actually the first node index of that particular level
-            int mini=q.front().second;
-            int first,last;
-            for(int i=0;i<size;i++){
-                int index=q.front().second-mini;
-                TreeNode* node=q.front().first;
-                q.pop();
-                if(i==0) first=index;
-                if(i==size-1) last=index;
-                if(node->left) q.push({node->left,(long long)2*index+1});
-                if(node->right) q.push({node->right,(long long)2*index+2});
-            }
-            ans=max(ans,last-first+1);
-        }   
+        dfs(root,1,0); // initially we are at index 1 and level 0
         return ans;
     }
 };
