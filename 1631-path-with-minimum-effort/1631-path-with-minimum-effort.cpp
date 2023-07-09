@@ -7,21 +7,21 @@ public:
         diff[0][0]=0;
         
         // difference row col
-        // priority_queue<pair<int,pair<int,int>>,
-        // vector<pair<int,pair<int,int>>>,
-        // greater<pair<int,pair<int,int>>>>pq;
+        priority_queue<pair<int,pair<int,int>>,
+        vector<pair<int,pair<int,int>>>,
+        greater<pair<int,pair<int,int>>>>pq;
         
-        queue<pair<int,pair<int,int>>>q;
-        q.push({0,{0,0}});
+        // queue<pair<int,pair<int,int>>>q;
+        pq.push({0,{0,0}});
         int dr[]={-1,0,1,0};
         int dc[]={0,1,0,-1};
-        while(!q.empty()){
-            auto it=q.front();
-            q.pop();
+        while(!pq.empty()){
+            auto it=pq.top();
+            pq.pop();
             int difference=it.first;
             int row=it.second.first;
             int col=it.second.second;
-            // if(row==m-1 && col==n-1) return difference;
+            if(row==m-1 && col==n-1) return difference;
             for(int i=0;i<4;i++){
                 int nr=row+dr[i];
                 int nc=col+dc[i];
@@ -29,11 +29,11 @@ public:
                     int newEffort=max(difference,abs(heights[nr][nc]-heights[row][col]));
                     if(newEffort<diff[nr][nc]){
                         diff[nr][nc]=newEffort;
-                        q.push({newEffort,{nr,nc}});
+                        pq.push({newEffort,{nr,nc}});
                     }
                 }
             }
         }
-        return diff[m-1][n-1];
+        return 0;
     }
 };
