@@ -9,7 +9,7 @@ public:
         for(int end=0;end<n;end++){
             cnt[s[end]-'A']++;
             if(maxChar<cnt[s[end]-'A']) maxChar=cnt[s[end]-'A'];
-            while(end-start+1-maxChar>k){
+            if(end-start+1-maxChar>k){
                 cnt[s[start]-'A']--;
                 start++;
             }
