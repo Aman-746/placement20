@@ -18,14 +18,14 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/aman-kumar-41090a200/" target="_blank">
+  <a href="https://www.linkedin.com/in/amaninprod/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-aman--kumar--41090a200-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:aman04012000@gmail.com">
     <img src="https://img.shields.io/badge/Email-aman04012000@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://leetcode.com/u/amandn/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-amandn-FF9F1C?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
+  <a href="https://leetcode.com/u/amaninprod/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-amaninprod-FF9F1C?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
   </a>
 </p>
 
@@ -101,8 +101,8 @@ cat solution.py  # or .java, .js, .cpp
 ## 📈 LeetCode Profile
 
 <p align="center">
-  <a href="https://leetcode.com/u/amandn/" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-amandn-FF9F1C?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" height="34"/>
+  <a href="https://leetcode.com/u/amaninprod/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-amaninprod-FF9F1C?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode" height="34"/>
   </a>
 </p>
 
@@ -119,7 +119,7 @@ Contributions are welcome! Add your solutions to help others prepare for placeme
 **Aman Kumar** — Full Stack Developer | AI Engineer
 
 📧 aman04012000@gmail.com &nbsp;•&nbsp; 📱 +91-7462933412 &nbsp;•&nbsp; 🇮🇳 India  
-🔗 [LinkedIn](https://www.linkedin.com/in/aman-kumar-41090a200/) &nbsp;•&nbsp; [GitHub](https://github.com/Aman-746) &nbsp;•&nbsp; [LeetCode](https://leetcode.com/u/amandn/)
+🔗 [LinkedIn](https://www.linkedin.com/in/amaninprod/) &nbsp;•&nbsp; [GitHub](https://github.com/Aman-746) &nbsp;•&nbsp; [LeetCode](https://leetcode.com/u/amaninprod/)
 
 ---
 
